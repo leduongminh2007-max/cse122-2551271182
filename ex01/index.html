@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 01: Trang thơ Bốn mùa</title>
+    <style>
+        :root {
+            --mau-nen-khung: #FFFDE7;
+            --mau-vien-khung: #9E9E9E;
+            --mau-nen-tieu-de: #FFD9E6;
+            --mau-chu-do: #D40000;
+            --mau-chu-xanh: #0033CC;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+
+        .khung-tho {
+            background-color: var(--mau-nen-khung);
+            border: 1px solid var(--mau-vien-khung);
+            width: 640px;
+            padding: 24px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .khung-tho h1 {
+            color: var(--mau-chu-do);
+            background-color: var(--mau-nen-tieu-de);
+            font-size: 26px;
+            font-weight: bold;
+            padding: 6px 0;
+            margin: 0 0 20px 0;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        /* Định dạng chung cho các khổ thơ */
+        .khung-tho p {
+            font-style: italic;
+            line-height: 1.7;
+            margin: 15px 0;
+        }
+
+        .kho-xanh {
+            color: var(--mau-chu-xanh);
+        }
+
+        .kho-do {
+            color: var(--mau-chu-do);
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background-color: var(--mau-chu-xanh);
+            width: 55%;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <article class="khung-tho">
+        <h1>Bốn Mùa</h1>
+        
+        <p class="kho-xanh">
+            Xuân về hoa nở khắp trời<br>
+            Hạ sang nắng cháy rạng ngời phố quen<br>
+            Thu về lá rụng bên thềm
+        </p>
+
+        <hr>
+
+        <p class="kho-do">
+            Đông sang gió lạnh bên em đợi chờ<br>
+            Bốn mùa là bốn giấc mơ<br>
+            Thời gian đi mãi ta chờ đợi ai
+        </p>
+
+        <hr>
+
+        <p class="kho-xanh">
+            Một năm rồi lại một năm<br>
+            Vẫn còn câu hát thì thầm quê hương<br>
+            Chờ xuân nắng mới soi đường
+        </p>
+    </article>
+
+</body>
+</html>
